@@ -9,7 +9,7 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => props.affair // need to fix
+    const deleteCallback = () => props.affair
 
     return (
         <div className={style.someClass}>
@@ -18,8 +18,6 @@ function Affair(props: AffairPropsType) {
                 <span>{props.affair.priority}</span>
                 <button onClick={deleteCallback}>X</button>
             </li>
-
-
         </div>
     )
 }
