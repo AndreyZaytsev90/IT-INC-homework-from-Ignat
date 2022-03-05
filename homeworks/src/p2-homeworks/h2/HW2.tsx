@@ -21,28 +21,22 @@ const defaultAffairs: Array<AffairType> = [
 ]
 
 // pure helper functions
-// @ts-ignore
+
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
-    if (filter === ' all') return affairs
-
-    else if (filter === ' high') {
-        return affairs.filter(affairs => affairs.priority === ' high')
+    if (filter === ' all') {
+        return affairs
     }
-    else if (filter === ' middle') {
-        return affairs.filter(affairs => affairs.priority === ' middle')
+    else {
+        return affairs.filter(affairs => affairs.priority === filter)
     }
-    else if (filter === ' low') {
-        return affairs.filter(affairs => affairs.priority === ' low')
-    }
-
-
 }
+
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => {
     return affairs.filter(affairs => affairs._id !== _id)
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs)
     const [filter, setFilter] = useState<FilterType>(' all')
 
     const filteredAffairs = filterAffairs(affairs, filter)

@@ -2,7 +2,7 @@ import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 
-type AffairsPropsType = { // need to fix any
+type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: Dispatch<SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
@@ -10,8 +10,8 @@ type AffairsPropsType = { // need to fix any
 
 function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
-        <Affair // should work
-            key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+        <Affair
+            key={a._id}
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
         />
