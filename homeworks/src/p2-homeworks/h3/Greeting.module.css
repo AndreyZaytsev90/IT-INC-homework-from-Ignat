@@ -1,7 +1,11 @@
 .someClass {
-
+    color: red
 }
 
-.error {
+.errorImput {
     border: 1px solid red;
+}
+
+.imput {
+    border: 1px solid black;
 }
