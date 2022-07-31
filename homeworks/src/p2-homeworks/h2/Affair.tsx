@@ -12,16 +12,16 @@ function Affair(props: AffairPropsType) {
 
 
     return (
-        <div className={style.someClass}>
-            <li>
-                <span>{props.affair.name}</span>
-                <span style={
-                    props.affair.priority === ' high' ? {color: 'red'}
-                        : props.affair.priority === ' middle' ? {color: 'orange'}
-                            : {color: 'green'}}>{props.affair.priority}</span>
-                <button onClick={deleteCallback}>X</button>
+        <ul className={style.someClass}>
+            <li className={style.box}>
+                <div className={style.name}>{props.affair.name}</div>
+                <div className={style.priority}
+                      style={props.affair.priority === 'high'
+                          ? {color: 'red'} : props.affair.priority === 'middle'
+                              ? {color: 'orange'} : {color: 'green'}}>{props.affair.priority}</div>
+                <button className={style.button} onClick={deleteCallback}>X</button>
             </li>
-        </div>
+        </ul>
     )
 }
 

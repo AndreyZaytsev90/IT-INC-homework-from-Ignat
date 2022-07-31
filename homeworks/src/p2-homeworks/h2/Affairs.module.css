@@ -1,3 +1,25 @@
+.global {
+    min-height: 300px;
+}
 .someClass {
-padding-left: 20px;
+    margin-left: 20px;
+    /*border: 1px solid red;*/
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.name {
+    width: 100px;
+}
+.priority {
+    width: 100px;
+
+}
+.boxButton {
+   margin-bottom: auto;
+}
+.button {
+    cursor: pointer;
 }

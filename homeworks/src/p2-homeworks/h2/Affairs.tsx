@@ -1,6 +1,7 @@
 import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import style from "./Affairs.module.css"
 
 type AffairsPropsType = {
     data: Array<AffairType>
@@ -15,22 +16,33 @@ function Affairs(props: AffairsPropsType) {
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
         />
+
     ))
 
-    const setAll = () => {props.setFilter(' all')}
-    const setHigh = () => {props.setFilter(' high')}
-    const setMiddle = () => {props.setFilter(' middle')}
-    const setLow = () => {props.setFilter(' low')}
+    const setAll = () => {
+        props.setFilter('all')
+    }
+    const setHigh = () => {
+        props.setFilter('high')
+    }
+    const setMiddle = () => {
+        props.setFilter('middle')
+    }
+    const setLow = () => {
+        props.setFilter('low')
+    }
 
     return (
-        <div>
+        <div className={style.global}>
 
             {mappedAffairs}
+            <div style={{marginLeft: 20}} className={style.boxButton}>
+                <button onClick={setAll}>All</button>
+                <button style={{color: "red"}} onClick={setHigh}>High</button>
+                <button style={{color: "orange"}} onClick={setMiddle}>Middle</button>
+                <button style={{color: "green"}} onClick={setLow}>Low</button>
+            </div>
 
-            <button onClick={setAll}>All</button>
-            <button style={{color: "red"}} onClick={setHigh}>High</button>
-            <button style={{color: "orange"}} onClick={setMiddle}>Middle</button>
-            <button style={{color: "green"}} onClick={setLow}>Low</button>
         </div>
     )
 }

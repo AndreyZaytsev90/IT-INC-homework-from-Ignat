@@ -12,7 +12,7 @@ const HW1 = () => {
     return (
         <div>
             <hr/>
-            <h2>homeworks 1</h2>
+            <h2 style={{marginLeft: 20}}>homeworks 1</h2>
 
             {/*should work (должно работать)*/}
 
