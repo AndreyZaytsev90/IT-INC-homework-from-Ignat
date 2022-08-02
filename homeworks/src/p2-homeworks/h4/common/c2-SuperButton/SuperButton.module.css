@@ -5,3 +5,42 @@
 .red {
     background: red;
 }
+
+
+.buttonAll {
+    border-color: grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonHigh {
+    color: red;
+    margin-left: 27px;
+    border-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonMiddle {
+    color: orange;
+    margin-left: 27px;
+    border-color: orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonLow, .buttonAdd {
+    color: green;
+    margin-left: 27px;
+    border-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonX {
+    color: darkred;
+    border-color: darkred;
+    width: 40px;
+    border-radius: 5px ;
+    cursor: pointer;
+}

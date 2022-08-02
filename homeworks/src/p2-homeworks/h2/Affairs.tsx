@@ -2,6 +2,7 @@ import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import style from "./Affairs.module.css"
+import styleBtn from "../h4/common/c2-SuperButton/SuperButton.module.css"
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = {
@@ -40,10 +41,10 @@ function Affairs(props: AffairsPropsType) {
 
 
       <div style={{marginLeft: 60}}>
-        <SuperButton className={style.buttonAll} onClick={setAll}>All</SuperButton>
-        <SuperButton className={style.buttonHigh} onClick={setHigh}>High</SuperButton>
-        <SuperButton className={style.buttonMiddle} onClick={setMiddle}>Middle</SuperButton>
-        <SuperButton className={style.buttonLow} onClick={setLow}>Low</SuperButton>
+        <SuperButton className={styleBtn.buttonAll} onClick={setAll}>All</SuperButton>
+        <SuperButton className={styleBtn.buttonHigh} onClick={setHigh}>High</SuperButton>
+        <SuperButton className={styleBtn.buttonMiddle} onClick={setMiddle}>Middle</SuperButton>
+        <SuperButton className={styleBtn.buttonLow} onClick={setLow}>Low</SuperButton>
       </div>
 
     </div>
