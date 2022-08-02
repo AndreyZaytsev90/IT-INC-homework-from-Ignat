@@ -10,6 +10,7 @@
     width: 75px;
     height: 75px;
 }
+
 .name {
     margin-left: 10px;
     color: blueviolet;
@@ -25,22 +26,33 @@
     margin-top: 5px;
     color: cadetblue;
 }
+
 .message {
     width: 350px;
     height: 68px;
     margin-left: 2px;
-    background: #B5DDD4;
+    background: #96efe0;
     position: relative;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 0px;
 }
-.message :before {
+
+.message :after {
+    /*  content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 100%;
+      top: calc(50% + 10px);
+      border-top: 8px solid transparent;
+      border-right: 15px solid #B5DDD4;
+      border-bottom: 8px solid transparent;*/
     content: "";
-    width: 0;
-    height: 0;
     position: absolute;
+    bottom: 0;
     right: 100%;
-    top: calc(50% + 10px);
-    border-top: 8px solid transparent;
-    border-right: 15px solid #B5DDD4;
-    border-bottom: 8px solid transparent;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(40px at top left, transparent 50%, #77e0cf);
+
 }

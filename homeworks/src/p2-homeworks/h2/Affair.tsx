@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from "./HW2";
 import style from "./Affairs.module.css"
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairPropsType = {
     affair: AffairType
@@ -19,7 +20,7 @@ function Affair(props: AffairPropsType) {
                       style={props.affair.priority === 'high'
                           ? {color: 'red'} : props.affair.priority === 'middle'
                               ? {color: 'orange'} : {color: 'green'}}>{props.affair.priority}</div>
-                <button className={style.button} onClick={deleteCallback}>X</button>
+                <SuperButton className={style.buttonX} onClick={deleteCallback}>X</SuperButton>
             </li>
         </ul>
     )
