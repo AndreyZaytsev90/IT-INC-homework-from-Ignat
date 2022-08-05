@@ -10,10 +10,10 @@ function App() {
     return (
         <div className={s.App}>
             <h1 style={{marginLeft: 20}}>react homeworks:</h1>
-            <HW1/>
+          {/*  <HW1/>
             <HW2/>
             <HW3/>
-            <HW4/>
+            <HW4/>*/}
             <HW5/>
         </div>
     )
