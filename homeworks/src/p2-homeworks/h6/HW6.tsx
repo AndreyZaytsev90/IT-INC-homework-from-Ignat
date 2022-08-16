@@ -2,39 +2,45 @@ import React, {useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
+import styleBtn from "../h4/common/c2-SuperButton/SuperButton.module.css";
 
 function HW6() {
-    const [value, setValue] = useState<string>('')
+  const [value, setValue] = useState<string>('')
 
-    const save = () => {
-        saveState<string>('editable-span-value', value)
-    }
-    const restore = () => {
-        // setValue()
-    }
+  const save = () => {
+    saveState<string>('editable-span-value', value)
 
-    return (
-        <div>
-            <hr/>
-            homeworks 6
+  }
+  const restore = () => {
+    const newValue = restoreState<string>('editable-span-value', value)
+    setValue(newValue)
+  }
 
-            {/*should work (должно работать)*/}
-            <div>
-                <SuperEditableSpan
-                    value={value}
-                    onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
-                />
-            </div>
-            <SuperButton onClick={save}>save</SuperButton>
-            <SuperButton onClick={restore}>restore</SuperButton>
+  return (
+    <div>
+      <hr/>
+      <h2 style={{marginLeft: 20}}>homeworks 6</h2>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
-            <hr/>
-        </div>
-    )
+      {/*should work (должно работать)*/}
+      <div>
+        <SuperEditableSpan
+          value={value}
+          onChangeText={setValue}
+          spanProps={{children: value ? undefined : 'ENTER TEXT'}}
+        />
+      </div>
+      <div style={{marginLeft: 20, marginTop: 20}}>
+        <SuperButton className={styleBtn.buttonAll} onClick={save}>save</SuperButton>
+        <SuperButton style={{marginLeft: 20}} className={styleBtn.buttonAll} onClick={restore}>restore</SuperButton>
+      </div>
+
+
+      <hr/>
+      {/*для личного творчества, могу проверить*/}
+      {/*<AlternativeSuperEditableSpan/>*/}
+      <hr/>
+    </div>
+  )
 }
 
 export default HW6
