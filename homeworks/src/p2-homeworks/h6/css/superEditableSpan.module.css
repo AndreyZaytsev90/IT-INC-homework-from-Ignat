@@ -1,5 +1,6 @@
-.enter {
+.span {
     display: flex;
+    height: 31px;
 }
 
 .enterText{

@@ -54,7 +54,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
   const spanClassName = `${'сделать красивый стиль для спана'} ${className}`
 
   return (
-    <div style={{marginLeft: 20}} className={style.enter}>
+    <span style={{marginLeft: 20}} className={style.span}>
       <img style={{width:22, height:22}} src={DoubleClick} alt="DoubleClick"/>
       <div className={style.enterText}>
         {editMode
@@ -79,7 +79,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
           )
         }
       </div>
-    </div>
+    </span>
   )
 }
 
