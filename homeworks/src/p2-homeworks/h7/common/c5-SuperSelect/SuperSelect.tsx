@@ -1,5 +1,4 @@
 import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from 'react'
-import {findAllByLabelText} from "@testing-library/react";
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
@@ -18,13 +17,15 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
   }
 ) => {
   const mappedOptions: any[] = options ? options.map((o, i) =>
-    <option key={value + '-' + i}
-            value={value}
+    <option key={o + '-' + i}
+            selected={value === o}
+            value={o}
     >{o}</option>
   ) : []// map options with key
 
   const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
     onChangeOption && onChangeOption(e.currentTarget.value)
+    debugger
     onChange && onChange(e)
     // onChange, onChangeOption
   }
