@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import styleBtn from "../h4/common/c2-SuperButton/SuperButton.module.css";
+import style from "../h2/Affairs.module.css";
 
 export type UserType = {
   _id: number
@@ -23,8 +24,9 @@ function HW8() {
 
   // need to fix any +++
   const finalPeople = people.map((p: UserType) => (
-    <div key={p._id}>
-      {p.name} --------- {p.age}
+    <div key={p._id} className={style.box}>
+      <div>{p.name}</div>
+      <div>{p.age}</div>
     </div>
   ))
 
@@ -38,14 +40,14 @@ function HW8() {
       <h2 style={{marginLeft: 20}}>homeworks 8</h2>
 
       {/*should work (должно работать)*/}
-      <div style={{marginLeft: 20}}>
+      <div style={{marginLeft: 20, fontSize: '20px'}}>
         {finalPeople}
       </div>
 
-      <div style={{paddingTop: 20}}>
-        <SuperButton className={styleBtn.buttonLow} onClick={sortUp}>Sort Up</SuperButton>
-        <SuperButton className={styleBtn.buttonHigh} onClick={sortDown}>Sort Down</SuperButton>
-        <SuperButton className={styleBtn.buttonMiddle} onClick={toEighteen}>Check 18</SuperButton>
+      <div style={{paddingTop: 20, marginLeft: -9}}>
+        <SuperButton className={styleBtn.buttonLow} onClick={sortUp}>SortUp</SuperButton>
+        <SuperButton className={styleBtn.buttonHigh} onClick={sortDown}>SortDown</SuperButton>
+        <SuperButton className={styleBtn.buttonMiddle} onClick={toEighteen}>Check18</SuperButton>
       </div>
 
       <hr/>
