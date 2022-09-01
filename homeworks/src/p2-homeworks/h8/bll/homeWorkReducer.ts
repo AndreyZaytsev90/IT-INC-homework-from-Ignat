@@ -16,8 +16,8 @@ export const homeWorkReducer = (state = initialState,
     switch (action.type) {
         case 'SORT-UP': {
             // need to fix
-            /*const copyState = {...state}*/
-            return state.sort(function (a, b){
+            const copyState = [...state]
+            return copyState.sort(function (a, b){
                 if (a.name > b.name) {
                     return 1;
                 }
@@ -29,8 +29,8 @@ export const homeWorkReducer = (state = initialState,
         }
         case 'SORT-DOWN': {
             // need to fix
-            /*const copyState = {...state}*/
-            return state.sort(function (a, b){
+            const copyState = [...state]
+            return copyState.sort(function (a, b){
                 if (a.name > b.name) {
                     return -1;
                 }
