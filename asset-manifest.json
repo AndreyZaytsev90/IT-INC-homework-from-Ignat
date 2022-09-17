@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/IT-INC-homework-from-Ignat/static/css/main.49e6d83d.chunk.css",
-    "main.js": "/IT-INC-homework-from-Ignat/static/js/main.7710c449.chunk.js",
-    "main.js.map": "/IT-INC-homework-from-Ignat/static/js/main.7710c449.chunk.js.map",
+    "main.css": "/IT-INC-homework-from-Ignat/static/css/main.97a4a697.chunk.css",
+    "main.js": "/IT-INC-homework-from-Ignat/static/js/main.7eb20f62.chunk.js",
+    "main.js.map": "/IT-INC-homework-from-Ignat/static/js/main.7eb20f62.chunk.js.map",
     "runtime-main.js": "/IT-INC-homework-from-Ignat/static/js/runtime-main.cc8a5f67.js",
     "runtime-main.js.map": "/IT-INC-homework-from-Ignat/static/js/runtime-main.cc8a5f67.js.map",
-    "static/js/2.d9f0af45.chunk.js": "/IT-INC-homework-from-Ignat/static/js/2.d9f0af45.chunk.js",
-    "static/js/2.d9f0af45.chunk.js.map": "/IT-INC-homework-from-Ignat/static/js/2.d9f0af45.chunk.js.map",
+    "static/js/2.3e41175c.chunk.js": "/IT-INC-homework-from-Ignat/static/js/2.3e41175c.chunk.js",
+    "static/js/2.3e41175c.chunk.js.map": "/IT-INC-homework-from-Ignat/static/js/2.3e41175c.chunk.js.map",
     "index.html": "/IT-INC-homework-from-Ignat/index.html",
-    "static/css/main.49e6d83d.chunk.css.map": "/IT-INC-homework-from-Ignat/static/css/main.49e6d83d.chunk.css.map",
-    "static/js/2.d9f0af45.chunk.js.LICENSE.txt": "/IT-INC-homework-from-Ignat/static/js/2.d9f0af45.chunk.js.LICENSE.txt",
+    "static/css/main.97a4a697.chunk.css.map": "/IT-INC-homework-from-Ignat/static/css/main.97a4a697.chunk.css.map",
+    "static/js/2.3e41175c.chunk.js.LICENSE.txt": "/IT-INC-homework-from-Ignat/static/js/2.3e41175c.chunk.js.LICENSE.txt",
     "static/media/404notFound.87049462.jpg": "/IT-INC-homework-from-Ignat/static/media/404notFound.87049462.jpg",
+    "static/media/Loading_icon.1a32f552.gif": "/IT-INC-homework-from-Ignat/static/media/Loading_icon.1a32f552.gif",
     "static/media/arrow.1d22cbea.svg": "/IT-INC-homework-from-Ignat/static/media/arrow.1d22cbea.svg",
     "static/media/double-arrows.75c8dae6.svg": "/IT-INC-homework-from-Ignat/static/media/double-arrows.75c8dae6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc8a5f67.js",
-    "static/js/2.d9f0af45.chunk.js",
-    "static/css/main.49e6d83d.chunk.css",
-    "static/js/main.7710c449.chunk.js"
+    "static/js/2.3e41175c.chunk.js",
+    "static/css/main.97a4a697.chunk.css",
+    "static/js/main.7eb20f62.chunk.js"
   ]
 }
