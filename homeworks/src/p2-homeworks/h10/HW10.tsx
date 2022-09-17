@@ -29,7 +29,7 @@ function HW10() {
             <h2 style={{marginLeft: 20}}>homeworks 10</h2>
 
             {/*should work (должно работать)*/}
-            <div style={{marginLeft: 20}}>
+            <div>
                 {loading
                     ? <img src={LoadingIcon} width={150} height={100} alt="Icon"/>
                     : (
